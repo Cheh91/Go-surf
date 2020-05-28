@@ -42,6 +42,25 @@ li{
     }
 }
 
+.headline-right{
+    font-size: 22px;
+    line-height: 32px;
+    letter-spacing: 7.33333px;
+    color: #FFFFFF;
+    opacity: 0.5;
+    position: relative;
+    display: inline-block;
+    &:before{
+        position: absolute;
+        content: "";
+        width: 80px;
+        height: 1px;
+        background-color: #979797;
+        right: -100px;
+        top: 50%;
+    }
+}
+
 .title{
     
     margin-left: -50px;
