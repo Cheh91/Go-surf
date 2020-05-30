@@ -485,13 +485,19 @@
 }
 
 
-.travel{
-    padding-bottom: 310px;
+.holder{
     background-image: url(../img/coctail-bg.png);
+    &.sleep{
+        background-image: url(../img/flower.png);
+        margin-bottom: 100px;
+        padding-bottom: 100px;
+    }
+    padding-bottom: 310px;
+    
     background-position: bottom right;
     background-repeat: no-repeat;
 }
-.travel-slider{
+.holder-slider{
     &__head{
         background-repeat: no-repeat;
         background-position: top left;
@@ -508,6 +514,7 @@
         min-height: 320px;
         background-position: right center;
         background-repeat: no-repeat;
+        background-size: contain;
     }
     &__btn{
         text-align: center;
@@ -521,7 +528,7 @@
     font-weight: 800;
     font-size: 40px;
 }
-.travel__slider-info{
+.holder__slider-info{
     display: flex;
     justify-content: space-around;
     &__item{
@@ -548,7 +555,7 @@
         font-size: 40px;
         font-weight: 800;
         padding-left: 40px;
-        span{
+        .holder-pricing__span{
             font-size: 14px;
             line-height: 36px;
             display: block;
@@ -559,10 +566,21 @@
         }
     }
 }
-.travel__slider{
+.holder__slider{
     .slider__arrows{
         top: 180px;
         opacity: 0.25;
+    }
+}
+.descr__head{
+    display: flex;
+    li{
+        margin-top: -5px;
+        margin-left: -10px;
+    }
+    ul{
+        display: flex;
+        margin-left: 20px;
     }
 }
 

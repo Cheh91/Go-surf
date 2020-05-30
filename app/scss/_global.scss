@@ -129,3 +129,66 @@ li{
 
 ////////////////////////////////////////////////////////////////
 
+.quantity {
+    // position: relative;
+    display: block;
+  }
+  
+  input[type=number]::-webkit-inner-spin-button,
+  input[type=number]::-webkit-outer-spin-button
+  {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+  input[type=number]
+  {
+    -moz-appearance: textfield;
+  }
+  
+  .quantity input {
+    width: 45px;
+    height: 42px;
+    float: left;
+    display: block;
+    background-color: transparent;
+    font-size: 40px;
+    font-weight: 800;
+    border: none;
+    color: #fff;
+    padding-top: 5px;
+
+  }
+  
+  .quantity input:focus {
+    outline: 0;
+  }
+  
+  .quantity-nav {
+    float: left;
+    position: relative;
+    height: 42px;
+  }
+  
+  .quantity-button {
+    position: relative;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .quantity-button.quantity-up {
+    position: absolute;
+    height: 50%;
+    top: 49px;
+    left: 120px;
+  }
+  
+  .quantity-button.quantity-down {
+    position: absolute;
+    bottom: -28px;
+    left: 80px;
+  }
