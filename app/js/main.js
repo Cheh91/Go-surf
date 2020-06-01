@@ -82,4 +82,15 @@ $(function(){
         let summ = $(".nights").val() * $(".summ").data("nights") + ($(".guests").val() - 1) * $(".summ").data("guests");
         $(".summ").html("$" + summ);
     });
+
+    $(".surboard-box__circle").on("click", function(){
+      $(this).toggleClass("active");
+    })
+
+    $(".shop__slider").slick({
+      infinite: true,
+        fade: true,
+        prevArrow: '<img class="slider__arrows slider__arrows-left" src="img/arrows-left.svg" alt="">',
+        nextArrow: '<img class="slider__arrows slider__arrows-right" src="img/arrows-right.svg" alt="">',
+    })
 });
