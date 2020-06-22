@@ -118,6 +118,7 @@
    a{
     color: #fff;
     margin-bottom: 25px;
+    text-decoration: none;
     span{
         display: block;
         font-weight: 500;
@@ -188,14 +189,14 @@
     }
 }
 
-.serf{
+.surf{
     padding: 150px 0px 270px;
     background-image: url(../img/serf-bg.svg);
     background-repeat: no-repeat;
     background-position: right 200px;
     background-size: auto;
 }
-.serf__subtitle{
+.surf__subtitle{
     text-align: right;
     margin-top: -80px;
     padding-right: 75px;
@@ -205,30 +206,31 @@
         line-height: 86px;
         span{
             font-weight: 300;
-            font-size: 40px;
             color: #fff;
         }
     }
 }
 
-.serf-box{
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    position: relative;
+.surf-box{
+    &__wrapper{
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+    }
     &__inner{
         background: rgba(#1C2121, 0.85);
         min-height: 750px;
         &:hover{
             background: rgba(#1C2121, 0.3);
             transition: 0.5s;
-            .serf-box__inner-btn{
+            .surf-box__inner-btn{
                 display: block;
             }
         }
     }
 }
-.serf-box__inner-title{
+.surf-box__inner-title{
     position: absolute;
     top: 72px;
     left: 40px;
@@ -237,7 +239,7 @@
     text-transform: uppercase;
     width: 140px;
 }
-.serf-box__inner-location{
+.surf-box__inner-location{
     font-size: 18px;
     line-height: 22px;
     text-transform: uppercase;
@@ -253,7 +255,7 @@
         font-weight: 100;
     }
 }
-.serf-box__inner-btn{
+.surf-box__inner-btn{
     position: absolute;
     bottom: 0;
     left: 0;
@@ -265,26 +267,26 @@
         text-decoration: none;
     }
 }
-.serf-slider{
+.surf-slider{
     padding-top: 110px;
     .slider__arrows{
         opacity: 0.25;
     }
     .slick-slide:nth-child(4n + 1){
-        .serf-box{
+        .surf-box{
             margin-top: 32px;
         }
     }
     .slick-slide:nth-child(4n + 3){
-        .serf-box{
+        .surf-box{
             margin-top: 89px;
         }
     }
     .slick-current{
-        .serf-box__inner-btn{
+        .surf-box__inner-btn{
             display: block;
         }
-        .serf-box__inner{
+        .surf-box__inner{
             background: rgba(#1C2121, 0.2);
         }    
     }  
@@ -302,39 +304,24 @@
     background-position: center;
     .slick-list{
         min-height: 635px;
+        overflow: visible;
     }
     .slick-current{
         .slider-dots__content{
             display: block;
             width: 285px;
-            padding: 28px 31px 31px 32px;
-            background-color: rgba(#0F1010, 0.7);
-            border-radius: 10px;
-            position: absolute;
-            bottom: 45px;
-            right: 0;
-            &:before{
-                content: "";
-                position: absolute;
-                width: 0;
-                height: 0;
-                border-bottom: 24px solid $green;
-                border-left: 12px solid transparent;
-                border-right: 12px solid transparent;
-                bottom: -30px;
-                // left: 47.5%;
-            }
-            .slider-dots__content-item{
-                img{
-                    margin: 0 auto;
-                }
-            }    
-        }
+            padding: 28px 31px 0px 32px;     
+        }    
     }
 }
+
 .slider-dots__content-row{
     display: flex;
     justify-content: space-between;
+    padding-bottom: 30px;
+}
+.slider-dots__content-head{
+    position: relative;
 }
 .slider-dots__content-title{
     font-size: 18px;
@@ -359,6 +346,10 @@
 }
 .slider-dots__content-item{
     text-align: center;
+    img{
+        margin: 0 auto;
+        margin-bottom: 7px;
+    }
 }
 .slider-dots__content-number{
     font-size: 16px;
@@ -374,37 +365,57 @@
 }
 .slider-dots__content-link{
     position: absolute;
-    top: 35px;
-    right: 15px;
+    top: 3px;
+    right: -90px;
     cursor: pointer;
     z-index: 4;
 }
+
 .slider-dots__circle{
-    width: 24px;
-    height: 24px;
+    width: 23px;
+    height: 23px;
     background-color: $green;
     border-radius: 50%;
     cursor: pointer;
-    
-}
-.slider-dots__content{
-    display: none;
+    box-shadow: 0px 0px 35px rgba(74, 246, 205, 0.837777);
 }
 
-.slider__dots{
+.slider-dots__content{
+    display: none;
+    background-color: rgba(#0F1010, 0.7);
+    border-radius: 10px;
+    position: absolute;
+    bottom: 40px;
+    transform: translateX(-50%);
+    &:before{
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-bottom: 24px solid $green;
+        border-left: 12px solid transparent;
+        border-right: 12px solid transparent;
+        border-radius: 10px;
+        bottom: -27px;
+        left: 50%;
+    }
+}
+
+.slider-dots{
     position: relative;
+    
 }
 
 .slider-dots--1{
     top: 330px;
     .slider-dots__content{
-        transform: translate(48%);
+        transform: translate(0);
         &::before{
-            left: -0.5%;
+            left: -0.2%;
         }
     }
-    
 }
+
 .slider-dots--2{
     top: 290px;
     left: -5%;
@@ -422,67 +433,46 @@
             opacity: 0.6;
         }
     }
-    .slider-dots__content{
-        &::before{
-            left: 47.5%;
-        }
-    }
 }
+
 .slider-dots--3{
     top: 320px;
     left: 15%;
-    .slider-dots__content{
-        &::before{
-            left: 47.5%;
-        }
-    }
 }
+
 .slider-dots--4{
     top: 500px;
-    left: -25%;
-    .slider-dots__content{
-        &::before{
-            left: 47.5%;
-        }
-    }
+    left: -24%;
 }
+
 .slider-dots--5{
     top: 210px;
     left: -40%;
-    .slider-dots__content{
-        &::before{
-            left: 47.5%;
-        }
-    }
 }
+
 .slider-dots--6{
     top: 550px;
-    left: -75%;
-    .slider-dots__content{
-        &::before{
-            left: 47.5%;
-        }
-    }
+    left: -76%;
 }
+
 .slider-dots--7{
     top: 390px;
     left: -65%;
-    .slider-dots__content{
-        &::before{
-            left: 47.5%;
-        }
-    }
 }
+
 .slider-dots--8{
     top: 520px;
     left: 20%;
     .slider-dots__content{
-        transform: translate(-30%);
+        transform: translate(-262px);
         &::before{
-            left: 77.6%;
+            right: 0;
+            left: auto;
         }
     }
 }
+
+
 
 
 .holder{
@@ -532,7 +522,7 @@
     display: flex;
     justify-content: space-around;
     &__item{
-        width: 242px;
+        width: 255px;
         min-height: 260px;
         position: relative;
     }
