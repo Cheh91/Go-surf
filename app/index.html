@@ -8,7 +8,9 @@
   <title>Document</title>
   <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,400;0,500;0,800;1,300&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.4.0/animate.min.css">
 </head>
 
 <body>
@@ -99,9 +101,9 @@
       <div class="header__slider-item slider-item">
         <div class="slider-item__info">
           <div class="slider-item__info-suptitle headline-left">Surf</div>
-          <div class="slider-item__info-title">North Shore</div>
+          <div class="slider-item__info-title wow fadeInLeft" data-wow-delay=".5s">North Shore</div>
           <div class="slider-item__info-suptext headline-left">Condition</div>
-          <div class="slider-item__info-text">Radical</div>
+          <div class="slider-item__info-text wow fadeInLeft" data-wow-delay="1s">Radical</div>
           <a href="#" class="slider-item__info-link">
             <img src="img/arrows-right.svg" alt="">
           </a>
@@ -141,7 +143,7 @@
         </div>
       </div>
     </div>
-    <div class="slider-dotshead">
+    <div class="slider-dotshead wow fadeInUp" data-wow-delay=".3s">
       <div class="slider-dots__item">
         <div class="dots-box">
           <div class="dots-box__number">01</div>
@@ -176,20 +178,20 @@
   <div class="container">
     <section class="surf">
       <div class="title">
-        <span>
-          surf
+        <div>
+          <span class="wow fadeInLeft" data-wow-offset="200">surf</span>
           <h3>surf</h3>
-        </span>
+        </div>
       </div>
-      <div class="surf__subtitle">
+      <div class="surf__subtitle wow fadeInRight" data-wow-offset="200"> 
         <div class="headline-left">
           Current location
         </div>
         <div class="subtitle__head">
           California <span>|</span> USA
-        </div>
+        </div>   
       </div>
-      <div class="slider-map">
+      <div class="slider-map wow zoomInDown" data-wow-offset="400" data-wow-duration="2s">
         <div class="slider-dots slider-dots--1">
           <div class="slider-dots__circle">
           </div>
@@ -577,7 +579,7 @@
       </div>
       <div class="surf-slider">
         <div class="surf-box">
-          <div class="surf-box__wrapper" style="background-image: url(../img/slide-1.jpg)">
+          <div class="surf-box__wrapper wow fadeInUp" data-wow-offset="400" data-wow-delay=".3s" style="background-image: url(../img/slide-1.jpg)">
             <div class="surf-box__inner">
               <div class="surf-box__inner-title">Malibu Beach</div>
               <div class="surf-box__inner-location">California <span>|</span> USA</div>
@@ -590,7 +592,7 @@
           </div>
         </div>
         <div class="surf-box surf-box__one">
-          <div class="surf-box__wrapper" style="background-image: url(../img/slide-2.jpg)">
+          <div class="surf-box__wrapper wow fadeInUp" data-wow-offset="400" data-wow-delay=".6s" style="background-image: url(../img/slide-2.jpg)">
             <div class="surf-box__inner">
               <div class="surf-box__inner-title">Airlie Beach</div>
               <div class="surf-box__inner-location">Queensland <span>|</span> Australia</div>
@@ -603,7 +605,7 @@
           </div>
         </div>
         <div class="surf-box">
-          <div class="surf-box__wrapper" style="background-image: url(../img/slide-3.jpg)">
+          <div class="surf-box__wrapper wow fadeInUp" data-wow-offset="400" data-wow-delay=".9s" style="background-image: url(../img/slide-3.jpg)">
             <div class="surf-box__inner">
               <div class="surf-box__inner-title">Cloud Nine</div>
               <div class="surf-box__inner-location">Siargao <span>|</span> Philippines</div>
@@ -616,7 +618,7 @@
           </div>
         </div>
         <div class="surf-box">
-          <div class="surf-box__wrapper" style="background-image: url(../img/slide-4.jpg)">
+          <div class="surf-box__wrapper wow fadeInUp" data-wow-offset="400" data-wow-delay="1.2s" style="background-image: url(../img/slide-4.jpg)">
             <div class="surf-box__inner">
               <div class="surf-box__inner-title">Vieux Boucau</div>
               <div class="surf-box__inner-location">Hossegor <span>|</span> France</div>
@@ -685,16 +687,16 @@
     <section class="holder">
       <div class="container">
         <div class="title">
-          <span>
-            travel
+          <div>
+            <span class="wow fadeInLeft" data-wow-offset="200">travel</span>
             <h3>travel</h3>
-          </span>
+          </div>
         </div>
         <div class="holder__slider">
           <div class="holder__slider-item holder-slider">
             <div class="holder-slider__head" style="background-image: url(../img/travelslider-bg.png)">
               <div class="holder-slider__subtitle">
-                <div class="surf__subtitle">
+                <div class="surf__subtitle wow fadeInRight" data-wow-offset="200">
                   <div class="headline-left">
                     Shore
                   </div>
@@ -704,7 +706,7 @@
                 </div>
               </div>
             </div>
-            <div class="holder-slider__descr" style="background-image: url(../img/virgin.png)">
+            <div class="holder-slider__descr wow fadeInUp" data-wow-offset="400" style="background-image: url(../img/virgin.png)">
               <div class="descr">
                 <div class="headline-right">
                   Airline
@@ -715,19 +717,19 @@
               </div>
             </div>
             <div class="holder__slider-info">
-              <div class="holder__slider-info__item">
+              <div class="holder__slider-info__item wow fadeInUp" data-wow-offset="400" data-wow-delay=".3s">
                 <div class="holder__slider-info__subtitle">Destination</div>
                 <div class="holder__slider-info__title">Queensland Australia</div>
               </div>
-              <div class="holder__slider-info__item">
+              <div class="holder__slider-info__item wow fadeInUp" data-wow-offset="400" data-wow-delay=".6s">
                 <div class="holder__slider-info__subtitle">Distance</div>
                 <div class="holder__slider-info__title">7,065 Miles</div>
               </div>
-              <div class="holder__slider-info__item">
+              <div class="holder__slider-info__item wow fadeInUp" data-wow-offset="400" data-wow-delay=".9s">
                 <div class="holder__slider-info__subtitle">Travel Time</div>
                 <div class="holder__slider-info__title">23 Hours 5 Minutes</div>
               </div>
-              <div class="holder__slider-info__item">
+              <div class="holder__slider-info__item wow fadeInUp" data-wow-offset="400" data-wow-delay="1.2s">
                 <div class="holder__slider-info__subtitle">Pricing</div>
                 <div class="holder__slider-info__title">$1,976 USD
                   <span class="holder-pricing__span">Round Trip</span>
@@ -1089,16 +1091,16 @@
     <section class="holder sleep">
       <div class="container">
         <div class="title">
-          <span>
-            sleep
+          <div>
+            <span class="wow fadeInLeft" data-wow-offset="200">sleep</span>
             <h3>sleep</h3>
-          </span>
+          </div>
         </div>
         <div class="holder__slider">
           <div class="holder__slider-item holder-slider">
             <div class="holder-slider__head" style="background-image: url(../img/sleepslider-bg.png)">
               <div class="holder-slider__subtitle">
-                <div class="surf__subtitle">
+                <div class="surf__subtitle wow fadeInRight" data-wow-offset="200">
                   <div class="headline-left">
                     Resorts
                   </div>
@@ -1136,11 +1138,11 @@
               </div>
             </div>
             <div class="holder__slider-info">
-              <div class="holder__slider-info__item">
+              <div class="holder__slider-info__item wow fadeInUp" data-wow-offset="400" data-wow-delay=".3s">
                 <div class="holder__slider-info__subtitle">Resort</div>
                 <div class="holder__slider-info__title">Auberge Australia</div>
               </div>
-              <div class="holder__slider-info__item">
+              <div class="holder__slider-info__item wow fadeInUp" data-wow-offset="400" data-wow-delay=".6s">
                 <div class="holder__slider-info__subtitle"># of Nights</div>
                 <div class="holder__slider-info__title">
                   <div class="quantity">
@@ -1149,7 +1151,7 @@
                   Nights
                 </div>
               </div>
-              <div class="holder__slider-info__item">
+              <div class="holder__slider-info__item wow fadeInUp" data-wow-offset="400" data-wow-delay=".9s">
                 <div class="holder__slider-info__subtitle"># of Guests</div>
                 <div class="holder__slider-info__title">
                   <div class="quantity">
@@ -1158,7 +1160,7 @@
                   Guests
                 </div>
               </div>
-              <div class="holder__slider-info__item">
+              <div class="holder__slider-info__item wow fadeInUp" data-wow-offset="400" data-wow-delay="1.2s">
                 <div class="holder__slider-info__subtitle">Pricing</div>
                 <div class="holder__slider-info__title">
                   <span class="summ" data-nights="55" data-guests="25">349 </span> USD
@@ -1716,10 +1718,10 @@
     </section>
     <section class="shop">
       <div class="title">
-        <span>
-          shop
+        <div>
+          <span class="wow fadeInLeft" data-wow-offset="200">shop</span>
           <h3>shop</h3>
-        </span>
+        </div>
       </div>
       <div class="shop__slider">
         <div class="shop__slider-item">
@@ -1751,7 +1753,7 @@
               </div>
             </div>
             <div class="shop__slider-content">
-              <div class="surfboard">
+              <div class="surfboard wow fadeInUp" data-wow-offset="600">
                 <img src="img/surfboard.png" alt="">
                 <div class="surfboard-box surfboard__position--one">
                   <div class="surboard-box__circle">
@@ -1785,7 +1787,7 @@
                 </div>
               </div>
             </div>
-            <div class="shop__extras">
+            <div class="shop__extras wow fadeInUp" data-wow-offset="300">
               <div class="shop__extras-title">
                 Extras
               </div>
@@ -2007,7 +2009,7 @@
       </div>
     </section>
     <footer class="footer">
-      <div class="footer-slider__btn">
+      <div class="footer-slider__btn wow fadeInUp">
         <a class="btn" href="#">
           go <span>surf</span>
         </a>
@@ -2020,6 +2022,8 @@
 
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"> -->
+  </script>
   <script src="js/libs.min.js"></script>
   <script src="js/main.js"></script>
 </body>
